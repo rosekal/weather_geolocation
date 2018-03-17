@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Project Geolocation</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/handlebars-v4.0.10.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script>
+	
+</script>
+</head>
+
+	<body>
+		<div data-role="page" id="homepage">
+			<div data-role="header">
+				<h1 id='cityHead'>Project Geolocation</h1>
+			</div>
+
+			<div id="main" data-role="main" class="ui-content">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>Current temperature</h3>
+					<h3 id='currTemp'></h3>
+					<h4 id='weatherText'></h4>
+					<img id='weather'></img>
+					<ul data-role="listview">
+					</ul>
+				</div>
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Today's weather data</h3>
+					<canvas id="canvas" height="450" width="600"></canvas>
+				</div>
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Forecast</h3>
+					<h3 id='currTemp'></h3>
+					<h4 id='weatherText'></h4>
+					<img id='weather'></img>
+					<ul data-role="listview">
+					</ul>
+				</div>
+				
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Search</h3>
+					<label for="search-basic">Search Input:</label>
+					<input type="search" name="search" id="search-basic" value="" />
+				</div>
+			</div>
+
+			<div data-role="footer">
+				<h3>Kalen Rose and Meet Patel</h3>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Project Geolocation</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/handlebars-v4.0.10.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://gd.geobytes.com/gd?after=-1&variables=GeobytesCountry,GeobytesCity"></script>
+	<script src="http://gd.geobytes.com/geoif"></script>
+	<script src="js/Chart.js"></script>
+</head>
+
+<body>
+	<div data-role="page" id="homepage">
+		<div data-role="header">
+			<h1 id='cityHead'>Project Geolocation</h1>
+		</div>
+		<div id="main" data-role="main" class="ui-content">
+			<div data-role="collapsible" data-collapsed="false">
+				<h3>Current temperature</h3>
+				<h3 id='currTemp'></h3>
+				<h4 id='weatherText'></h4>
+				<img id='weather'></img>
+				<ul data-role="listview">
+				</ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>Weather forecast</h3>
+				<ul id="weekForecast" data-role="listview">
+					
+				</ul>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+				<h3>This week's temperature</h3>
+				<canvas id="weekTemperature" height="450" width="600"></canvas>
+			</div>
+			<div data-role="collapsible" data-collapsed="true">       
+				<legend>Search</legend>
+				<input type="search" name="search" id="search-basic" placeholder="Search Input" value="" />        
+				<select name="select-choice-a" id="searchHistory" data-native-menu="false">
+					<option>Previous Search</option>
+				</select>
+				<input id="searchBTN" type="button" data-role="button" class="ui-btn" value="Get weather"/>
+				<input id="clearBTN" type="button" data-role="button" class="ui-btn" value="Clear history"/>
+			</div>
+		</div>
+		<div data-role="footer">
+			<h3>Kalen Rose and Meet Patel</h3>
+		</div>
+	</div>
+</body>
+</html>

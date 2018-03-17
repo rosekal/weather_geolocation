@@ -1,0 +1,6 @@
+{
+	"cities": [{"Name": "Mississauga"},
+			   {"Name": "Brampton"},
+			   {"Name": "Toronto"}
+			]
+}
